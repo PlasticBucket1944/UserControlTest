@@ -51,6 +51,7 @@
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(200, 27);
             this.textBox.TabIndex = 1;
+            this.textBox.Leave += new System.EventHandler(this.textBox_Leave);
             // 
             // InputControl
             // 
