@@ -28,10 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.labelDisp = new System.Windows.Forms.Label();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // labelDisp
+            // 
+            this.labelDisp.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labelDisp.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labelDisp.Location = new System.Drawing.Point(0, 0);
+            this.labelDisp.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.labelDisp.Name = "labelDisp";
+            this.labelDisp.Size = new System.Drawing.Size(223, 27);
+            this.labelDisp.TabIndex = 0;
+            this.labelDisp.Text = "何か入力してください";
+            // 
+            // textBox
+            // 
+            this.textBox.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.textBox.Location = new System.Drawing.Point(222, 0);
+            this.textBox.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(200, 27);
+            this.textBox.TabIndex = 1;
+            // 
+            // InputControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBox);
+            this.Controls.Add(this.labelDisp);
+            this.Name = "InputControl";
+            this.Size = new System.Drawing.Size(423, 27);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label labelDisp;
+        private System.Windows.Forms.TextBox textBox;
     }
 }
