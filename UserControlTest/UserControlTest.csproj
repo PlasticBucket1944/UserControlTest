@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InputControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputControl.Designer.cs">
+      <DependentUpon>InputControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
