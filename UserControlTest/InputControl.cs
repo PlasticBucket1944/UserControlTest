@@ -10,8 +10,16 @@ using System.Windows.Forms;
 
 namespace UserControlTest
 {
+
+    /// <summary>
+    /// イベントハンドラ外出しテスト用UserControl
+    /// </summary>
     public partial class InputControl : UserControl
     {
+
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public InputControl()
         {
             InitializeComponent();
@@ -23,14 +31,14 @@ namespace UserControlTest
         private string bfoText = string.Empty;
 
         /// <summary>
-        /// LeaveValueChangedイベントハンドラ
+        /// LeaveValueChangedイベントハンドラ(Leave時値が変更されていたら発生)
         /// </summary>
         private event EventHandler leaveValueChanged;
 
         /// <summary>
         /// LeaveValueChanged イベントを追加・削除
         /// </summary>
-        [Category("UserControl1")]
+        [Category("InputControl")]
         [Browsable(true)]
         [Description("LeaveValueChanged イベント")]
         public event EventHandler LeaveValueChanged

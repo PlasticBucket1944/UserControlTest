@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.inputControl1 = new UserControlTest.InputControl();
-            this.button1 = new System.Windows.Forms.Button();
+            this.inputControl = new UserControlTest.InputControl();
+            this.button = new System.Windows.Forms.Button();
             this.labelDisp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // inputControl1
+            // inputControl
             // 
-            this.inputControl1.Location = new System.Drawing.Point(13, 35);
-            this.inputControl1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.inputControl1.Name = "inputControl1";
-            this.inputControl1.Size = new System.Drawing.Size(423, 29);
-            this.inputControl1.TabIndex = 0;
+            this.inputControl.Location = new System.Drawing.Point(13, 35);
+            this.inputControl.Margin = new System.Windows.Forms.Padding(0);
+            this.inputControl.Name = "inputControl";
+            this.inputControl.Size = new System.Drawing.Size(423, 29);
+            this.inputControl.TabIndex = 0;
+            this.inputControl.LeaveValueChanged += new System.EventHandler(this.inputControl_LeaveValueChanged);
             // 
-            // button1
+            // button
             // 
-            this.button1.Location = new System.Drawing.Point(361, 110);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button.Location = new System.Drawing.Point(361, 110);
+            this.button.Name = "button";
+            this.button.Size = new System.Drawing.Size(75, 23);
+            this.button.TabIndex = 1;
+            this.button.Text = "button1";
+            this.button.UseVisualStyleBackColor = true;
             // 
             // labelDisp
             // 
@@ -67,8 +68,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 213);
             this.Controls.Add(this.labelDisp);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.inputControl1);
+            this.Controls.Add(this.button);
+            this.Controls.Add(this.inputControl);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -77,8 +78,8 @@
 
         #endregion
 
-        private InputControl inputControl1;
-        private System.Windows.Forms.Button button1;
+        private InputControl inputControl;
+        private System.Windows.Forms.Button button;
         private System.Windows.Forms.Label labelDisp;
     }
 }
